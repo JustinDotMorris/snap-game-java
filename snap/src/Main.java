@@ -4,5 +4,7 @@ public class Main {
         System.out.println(cardGame.getDeckOfCards());
         System.out.println(cardGame.dealCard());
         System.out.println(cardGame.sortDeckInNumberOrder());
+        System.out.println(cardGame.sortDeckIntoSuits());
+        System.out.println(cardGame.shuffleDeck());
     }
 }

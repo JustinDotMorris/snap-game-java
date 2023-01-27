@@ -35,10 +35,16 @@ public class CardGame {
     }
     public  Object sortDeckIntoSuits(){
         Collections.sort(deckOfCards, new Comparator<Card>() {
-            public int compare(Card c1, Card c2,Card c3,Card c4) {
-                return Integer.valueOf(c1.getSuit()).compareTo(c2.getSuit());
+            public int compare(Card c1, Card c2) {
+                return (c1.getSuit()).compareTo(c2.getSuit());
             }
-        })
+        });
+        return deckOfCards;
+    }
+
+    public Object shuffleDeck(){
+        Collections.shuffle(deckOfCards);
+        return deckOfCards;
     }
 
 }
