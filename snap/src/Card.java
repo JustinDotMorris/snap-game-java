@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Card{
-    //variables---------------------------------------
+
     private String suit;
     private String symbol;
     private int value;
@@ -11,10 +11,6 @@ public class Card{
         this.symbol = symbol;
         this.value = value;
     }
-
-    //constructors-----------------------------------
-
-    //Getters & Setters------------------------------
 
     public String getSuit() {
         return suit;
@@ -41,11 +37,6 @@ public class Card{
     }
 
 
-    //methods----------------------------------------
-
-
-    //toString
-
     @Override
     public String toString() {
         return "Cards{" +
@@ -54,17 +45,4 @@ public class Card{
                 ", value=" + value +
                 '}';
     }
-
-
-    //black
-    //spade=♠
-    //club=♣
-    //diamond=♦
-    //heart=♥
-    //Red
-    //spade=♤
-    //club=♧
-    //diamond=♢
-    //heart=♡
-    //    public String[] symbol={"♣","♠","♦","♥","♧","♤","♢","♡"};
 }
